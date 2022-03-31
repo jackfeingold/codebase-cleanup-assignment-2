@@ -10,7 +10,7 @@
 #requests
 
 # data processing:
-#pandas
+pandas
 
 # email:
 #sendgrid==6.6.0 # this version may be older than current docs
