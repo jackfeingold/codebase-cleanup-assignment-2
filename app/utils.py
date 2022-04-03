@@ -12,3 +12,8 @@ def to_usd(my_price):
 
 
     return '${:,.2f}'.format(my_price)
+
+
+if __name__ == "__main__":
+    num = input("Choose a price like 4.87: ")
+    print(to_usd(float(num)))
