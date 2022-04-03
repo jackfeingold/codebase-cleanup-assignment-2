@@ -6,18 +6,7 @@
 #products = products_df.to_dict("records")
 
 import os
-
-def to_usd(my_price):
-
-    """
-    This function will format a number that is passed into the function as USD
-    It will be comma separated and formatted as $0.00
-
-    Invoke like this: to_usd(9.99999)
-    """
-
-
-    return '${:,.2f}'.format(my_price)
+from app.utils import to_usd
 
 
 products_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
