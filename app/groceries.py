@@ -22,6 +22,7 @@ def to_usd(my_price):
 
 products_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
 
+
 # checks to see if a products.csv file exists. If not, it uses the default
 if os.path.isfile(products_filepath) == True:
     print("USING CUSTOM PRODUCTS CSV FILE...")
