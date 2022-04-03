@@ -4,10 +4,10 @@
 # this is the requirements.txt file...
 
 # environment variable management via ".env" file approach:
-#python-dotenv
+python-dotenv
 
 # web requests / fetching data:
-#requests
+requests
 
 # data processing:
 pandas
