@@ -22,3 +22,7 @@ pandas
 # quality control / code mgmt:
 pytest
 #autopep8
+
+
+# printing
+#pprint

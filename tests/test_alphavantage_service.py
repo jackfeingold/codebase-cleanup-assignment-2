@@ -1,4 +1,6 @@
 
 from app.alphavantage_service import fetch_data
+from pprint import pprint
 
-print(fetch_data("BTC"))
+
+pprint(fetch_data("BTC"))

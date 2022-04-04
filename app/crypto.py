@@ -8,7 +8,7 @@ import json
 from dotenv import load_dotenv
 import requests
 from app.utils import to_usd
-from app.alphavantage_service import fetch_data
+from app.alphavantage_service import fetch_data_crypto
 
 
 symbol = input("Please input a crypto symbol (default: 'BTC'): ") or "BTC"
@@ -23,7 +23,7 @@ symbol = input("Please input a crypto symbol (default: 'BTC'): ") or "BTC"
 #breakpoint()
 
 
-tsd = fetch_data(symbol)["Time Series (Digital Currency Daily)"]
+tsd = fetch_data_crypto(symbol)["Time Series (Digital Currency Daily)"]
 
 dates = list(tsd.keys())
 latest_date = dates[0]
