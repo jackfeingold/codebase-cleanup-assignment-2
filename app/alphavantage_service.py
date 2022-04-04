@@ -52,3 +52,27 @@ def fetch_data_stocks(symbol):
     url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}&datatype=csv"
 
     return read_csv(url)
+
+
+def fetch_data_unemployment():
+    
+    """
+    This function will fetch historical unemployment data from the AlphaVantage API.  
+    There are no arguments or parameters, but the function will return a dictionary object from the parsed json response.
+    
+    Simply invoke by writing:
+
+    variable = fetch_data_unemployment()
+
+    The variable will now contain a dictionary with historical unemployment data.
+    
+    """
+    
+    load_dotenv()
+
+    ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
+
+    # docs: https://www.alphavantage.co/documentation/#unemployment
+    url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={ALPHAVANTAGE_API_KEY}"
+    response = requests.get(url)
+    return json.loads(response.text)
