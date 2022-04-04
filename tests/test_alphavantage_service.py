@@ -5,4 +5,4 @@ from pprint import pprint
 
 #pprint(fetch_data("BTC"))
 
-print(type(fetch_data_unemployment()))
+pprint(fetch_data_unemployment())["data"]
