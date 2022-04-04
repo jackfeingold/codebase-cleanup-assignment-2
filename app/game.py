@@ -91,11 +91,11 @@ if __name__ == "__main__":
     #    print("It's a tie!")
 
 
-winner = determine_winner(u,c)
+    winner = determine_winner(u,c)
 
-if winner == u:
-    print("You won!")
-elif winner == c:
-    print("The computer won.")
-else:
-    print("It's a tie.")
+    if winner == u:
+        print("You won!")
+    elif winner == c:
+        print("The computer won.")
+    else:
+        print("It's a tie.")
