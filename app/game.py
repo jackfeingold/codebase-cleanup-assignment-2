@@ -8,7 +8,13 @@ def determine_winner(user_choice, computer_choice):
     
     """
     This function is designed to determine the winner of a game of rock, paper, scissors between the user and a computer
-    The required parameters are
+    The required parameters are the user's choice of rock, paper, or scissors and the computer's choice of the same.
+    When entered into the function, it must be a string and must be in lower case.
+    The function will return only the winning choice between the two, so there must be additional code to tell if the 
+    user or computer won, and to make for example an output message.
+
+    Invoke like this: determine_winner("rock", "scissors")
+    The function should return the value "rock".
     
     """
     
