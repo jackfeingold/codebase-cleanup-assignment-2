@@ -5,6 +5,13 @@
 from random import choice
 
 def determine_winner(user_choice, computer_choice):
+    
+    """
+    This function is designed to determine the winner of a game of rock, paper, scissors between the user and a computer
+    The required parameters are
+    
+    """
+    
     #return "paper"
     winners = {
         "rock": {
