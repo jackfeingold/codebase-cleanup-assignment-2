@@ -28,7 +28,7 @@ Set environment variables using a ".env" file approach:
 ```sh
 ALPHAVANTAGE_API_KEY="..."
 ```
-
+Create a file titled .env in the root directory and ensure .env is included in the .gitignore file.
 
 ## Usage and Details
 
