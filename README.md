@@ -30,6 +30,7 @@ ALPHAVANTAGE_API_KEY="..."
 ```
 Create a file titled .env in the root directory and ensure .env is included in the .gitignore file.
 
+
 ## Usage and Details
 
 Run the game:
@@ -88,6 +89,7 @@ Run the unemployment report:
 python -m app.unemployment
 ```
 
+
 The unemployment.py file will show historical monthly unemployment data, generating a bar chart and a csv file for the user.  Similarly to the stocks.py and crypto.py files, the unemployment.py program interfaces with the AlphaVantage API and pulls data off of the internet.  Unlike the stocks and crypto files, this program requires no user input.  It simply will generate the chart and export the data to a csv when it is activated.
 
 This program uses a standalone function called fetch_data_unemployment, which is stored in the alphavantage_service.py file and imported into the program.  The fetch_data_unemployment function returns a dictionary object containing the relevant unemployement data, specifically dates and unemployment rates.
@@ -111,3 +113,4 @@ To test new or other existing functions in the repository, follow these steps:
     a. Write the "assert" key word on the next line, then write the tested function with the desired inputs, use the == operator to write the expected output
 
 When the desired tests are written, use the above command again from the command line. 
+
