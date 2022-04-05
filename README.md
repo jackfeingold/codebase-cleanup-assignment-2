@@ -27,9 +27,6 @@ Set environment variables using a ".env" file approach:
 
 ```sh
 ALPHAVANTAGE_API_KEY="..."
-
-SENDER_ADDRESS="example@gmail.com"
-SENDGRID_API_KEY="SG...."
 ```
 
 
