@@ -96,4 +96,25 @@ Run the unemployment report:
 python -m app.unemployment
 ```
 
-The unemployment.py file will show the 
+The unemployment.py file will show historical monthly unemployment data, generating a bar chart and a csv file for the user.  Similarly to the stocks.py and crypto.py files, the unemployment.py program interfaces with the AlphaVantage API and pulls data off of the internet.  Unlike the stocks and crypto files, this program requires no user input.  It simply will generate the chart and export the data to a csv when it is activated.
+
+This program uses a standalone function called fetch_data_unemployment, which is stored in the alphavantage_service.py file and imported into the program.  The fetch_data_unemployment function returns a dictionary object containing the relevant unemployement data, specifically dates and unemployment rates.
+
+After the function is run and the data is downloaded from the AlphaVantage API, the dictionary is converted into a pandas dataframe, which is later used to make the bar chart.  The pandas and plotly.express packages are used for data analysis and visualization.  The bar chart and data csv are stored as a png file and a csv file within a folder named "reports" inside of the repository directory on the user's local computer.
+
+## Testing
+
+To run the tests that have already been written into the code, type the following on the command line:
+
+```sh
+pytest
+```
+
+To test new or other existing functions in the repository, follow these steps:
+
+1. Create a new file in the "tests" directory whose name either starts with "test_" or ends with "_test.py"
+2. Import the desired function into the test file
+3. Write a function definition using the following steps:
+    a. Write the "assert" key word on the next line, then write the tested function with the desired inputs, use the == operator to write the expected output
+
+When the desired tests are written, use the above command again from the command line. 
