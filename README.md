@@ -114,7 +114,8 @@ To test new or other existing functions in the repository, follow these steps:
 
 1. Create a new file in the "tests" directory whose name either starts with "test_" or ends with "_test.py"
 2. Import the desired function into the test file
-3. Write a function definition using the following steps:
+3. Write a function definition using the following steps:  
+    
     a. Write the "assert" key word on the next line, then write the tested function with the desired inputs, use the == operator to write the expected output
 
 When the desired tests are written, use the above command again from the command line. 
