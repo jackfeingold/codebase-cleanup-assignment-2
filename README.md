@@ -1,4 +1,4 @@
-# codebase-cleanup-template
+# Codebase Cleanup Exercise
 
 To get started with the ["Codebase Cleanup" Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/codebase-cleanup/README.md).
 
@@ -22,11 +22,6 @@ pip install -r requirements.txt
 
 
 ## Configuration
-
-Obtain a premium AlphaVantage API Key [here](https://www.alphavantage.co/).
-
-Sign up for a [SendGrid Account](https://sendgrid.com/), verify single sender, then obtain a Sendgrid API Key. 
-
 
 Set environment variables using a ".env" file approach:
 
